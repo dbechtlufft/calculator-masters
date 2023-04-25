@@ -25,14 +25,14 @@ let screenHandler = (value, operator) => {
     }
     else if (mathOperators.includes(operator)){
         if (firstNumber === null){
-            firstNumber = screen.innerText;
-            operation = operator;
+            globalVariablesHandler("clear", screen.innerText, operator);
             screen.innerHTML = value;
         }
         else {
             screen.innerHTML = calculator(firstNumber, screen.innerText, operation)
             globalVariablesHandler("clear", screen.innerText, operator);
         }
+
     }
     else if (operator === "equals"){
         screen.innerHTML = calculator(firstNumber, screen.innerText, operation);
