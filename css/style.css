@@ -6,8 +6,8 @@
 
 
 .screen {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
     width: 160px;
     height: 40px;
     text-align: end;
@@ -24,7 +24,7 @@ button {
 
 button:last-child {
     background-color: #df974c;
-    color: white;
+    color: #ffffff;
 }
 
 .first-row > button:first-child {
